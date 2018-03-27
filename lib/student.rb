@@ -68,7 +68,7 @@ class Student
     Student.new_from_db(student.first)
   end
   
-  def self.all_students_in_grade_X(X)
+  def self.all_students_in_grade_X(x)
     sql = <<-SQL
     SELECT * FROM students
     WHERE grade < 12 
