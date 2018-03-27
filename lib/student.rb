@@ -34,6 +34,8 @@ class Student
     WHERE grade = 9 
     FROM students
     SQL
+    
+    
   end
   
   def save
