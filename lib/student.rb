@@ -2,7 +2,7 @@ class Student
   attr_accessor :id, :name, :grade
 
   def self.new_from_db(row)
-    
+    Student.new.tap do |student|
   end
 
   def self.all
