@@ -13,7 +13,7 @@ class Student
     sql = "SELECT * FROM students"
     
     DB[:conn].execute(sql).map do |row|
-      
+      Student.new(row)
     end
   end
 
