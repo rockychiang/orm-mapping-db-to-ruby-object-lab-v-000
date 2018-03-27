@@ -35,7 +35,7 @@ class Student
     FROM students
     SQL
     
-    DB[:conn].execute(sql).first
+    DB[:conn].execute(sql).first.first
   end
   
   def save
