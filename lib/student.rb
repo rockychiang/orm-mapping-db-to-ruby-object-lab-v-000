@@ -65,6 +65,7 @@ class Student
     SQL
     
     student = DB[:conn].execute(sql)
+    Studnet.new_from_db(Studnet)
   end
   
   def save
