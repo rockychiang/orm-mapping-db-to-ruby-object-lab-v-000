@@ -35,7 +35,7 @@ class Student
     FROM students
     SQL
     
-    DB[:conn].execute(sql, self.name, self.grade)
+    DB[:conn].execute(sql)
   end
   
   def save
