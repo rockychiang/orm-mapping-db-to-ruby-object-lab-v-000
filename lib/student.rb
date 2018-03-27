@@ -3,6 +3,8 @@ class Student
 
   def self.new_from_db(row)
     Student.new.tap do |student|
+      
+    end
   end
 
   def self.all
