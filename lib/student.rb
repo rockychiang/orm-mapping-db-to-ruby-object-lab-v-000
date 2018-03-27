@@ -54,7 +54,7 @@ class Student
     LIMIT ?
     SQL
     
-    DB[:conn].execute(sql).first
+    DB[:conn].execute(sql, x).first
   end
   
   def save
