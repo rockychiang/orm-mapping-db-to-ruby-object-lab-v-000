@@ -11,6 +11,8 @@ class Student
 
   def self.all
     sql = "SELECT * FROM students"
+    
+    DB[:conn].execute(sql)
   end
 
   def self.find_by_name(name)
