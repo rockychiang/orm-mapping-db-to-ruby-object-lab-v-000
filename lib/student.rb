@@ -21,6 +21,7 @@ class Student
     SQL
     
     student = DB[:conn].execute(sql, name)
+    Student.new(student)
   end
   
   def save
